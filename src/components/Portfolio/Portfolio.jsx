@@ -7,9 +7,11 @@ import {
   mobilePortfolio,
   designPortfolio,
 } from '../../data';
+import { AnimatePresence, motion } from "framer-motion"
 
 function Portfolio() {
 
+  const [selectedId, setSelectedId] = useState(null)
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
 
@@ -65,16 +67,34 @@ function Portfolio() {
             />
         ))}
       </ul>
-      <div className="container">
-          {data.map(item => (
-            <div className="item">
-              <img 
-                src={item.img} 
-                alt={item.title} />
-              <h3>{item.title}</h3>
-            </div>
-          ))}
-      </div>
+        <div className="container">
+            {data.map(item => (
+            <motion.div 
+              layoutId={item.id}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} 
+              onClick={() => setSelectedId(item.id)}>
+                <div className="item">
+                  <img 
+                    src={item.img} 
+                    alt={item.title} />
+                  <h3>{item.title}</h3>
+                </div>
+            </motion.div>
+            ))}
+        </div>
+      <AnimatePresence initial={false}>
+       {selectedId && (
+        <motion.div layoutId={selectedId}>
+          <motion.h5>hola</motion.h5>
+          <motion.h2>prueba</motion.h2>
+          <motion.button onClick={() => setSelectedId(null)}>
+            Close
+          </motion.button>
+        </motion.div>
+      )}
+      </AnimatePresence>
     </div>
   )
 }

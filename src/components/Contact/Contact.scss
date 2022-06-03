@@ -1,3 +1,104 @@
+@import "../../global.scss";
+
 .contact{
-    background-color: lightblue;
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    .left{
+        flex: 1;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 30px;
+
+            @include mobile{
+                    position: absolute;
+                    height: 100px;
+                    top: 2700px;
+                }
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            input{
+                width: 90%;
+                height: 30px;
+                font-size: 14px;
+                margin-top:3rem;
+                margin-bottom:3rem;
+
+                @include mobile{
+                    position: absolute;
+                    width: 70%;
+                    height: 25px;
+                    top: 2700px;
+                }
+            }
+
+            textarea{
+                width: 90%;
+                height: 300px;
+                font-size: 14px;
+                margin-bottom:3rem;
+
+                @include mobile{
+                    position: absolute;
+                    width: 70%;
+                    height: 100px;
+                    top: 2790px;
+                }
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                background-color: green;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                 @include mobile{
+                    position: absolute;
+                    width: 70%;
+                    height: 50px;
+                    top: 2910px;
+                    font-size: 24px;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            span{
+                margin-top: 3rem;
+                color: green;
+            }
+        }
+
+    }
 }

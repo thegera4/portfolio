@@ -1,5 +1,6 @@
 import './Works.scss';
 import { useState } from 'react';
+import AnimatedSlider from '../AnimatedSlider/AnimatedSlider'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -54,7 +55,8 @@ function Works() {
 
   return (
     <div className="works" id="works">
-      <div 
+     {/* <AnimatedSlider /> */}
+       <div 
       className="slider" 
       style={{ transform: `translateX(-${currentSlide * 100}vw)`}}>
        {data.map((item) => (
@@ -64,7 +66,7 @@ function Works() {
                 <div className="leftContainer">
                   <div className="imgContainer">
                     <img 
-                      src={item.img /*poner icons relacionados al proyecto*/} 
+                      src={item.img} 
                       alt="" />
                   </div>
                   <h2>{item.title}</h2>
@@ -81,7 +83,8 @@ function Works() {
             </div>
           </div>
        ))}
-      </div>
+      </div> 
+
       <ArrowBackIosNewIcon className="arrow left" onClick={() => handleClick("left")}/>
       <ArrowForwardIosIcon className="arrow right" onClick={() => handleClick("right")}/>
     </div>
