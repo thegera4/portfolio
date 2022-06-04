@@ -16,7 +16,7 @@ $width2: 580px;
     }
 }
 
-$height: 1070px;
+$height: 974px;
 
 @mixin mobile3 {
     @media (max-height: $height) {
@@ -32,3 +32,4 @@ $height2: 875px;
         @content;
     }
 }
+

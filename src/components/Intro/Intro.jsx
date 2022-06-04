@@ -65,6 +65,18 @@ function Intro() {
       }
     }
   }
+  const variantsAboutMe = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 2,
+        duration: 3,
+      }
+    }
+  }
 
   const textRef = React.useRef();
 
@@ -119,6 +131,10 @@ function Intro() {
           </a>
       </div>
       <div className="two">
+      <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variantsAboutMe}>
         <div className="bottomWrapper">
           <h2>About me:</h2>
           <p>Im a mechatronics engineer that is passionate about technology and learning new things.</p>
@@ -162,6 +178,7 @@ function Intro() {
             <ArrowDownwardIcon />
           </a>
         </div>
+       </motion.div>
       </div>
     </div>
   )

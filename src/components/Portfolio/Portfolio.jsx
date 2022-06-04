@@ -5,9 +5,12 @@ import {
   featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
-  designPortfolio,
 } from '../../data';
-import { AnimatePresence, motion } from "framer-motion"
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+//import { AnimatePresence, motion } from "framer-motion"
 
 function Portfolio() {
 
@@ -27,11 +30,7 @@ function Portfolio() {
     {
       id: "mobile",
       title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
+    }
   ]
 
   useEffect(() =>{
@@ -44,9 +43,6 @@ function Portfolio() {
         break;
       case "mobile":
         setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -67,7 +63,30 @@ function Portfolio() {
             />
         ))}
       </ul>
-        <div className="container">
+      <div className="container">
+          <Slider className="slider-wrapper">
+            {data.map((slide, index) => 
+              <div 
+                key={index}
+                className="slider-content"
+                style={{ background: `url('${slide.img}') no-repeat center center`, height:1000 }}>
+                  <div className="inner">
+                    <h1>{slide.title}</h1>
+                    <p>{slide.description}</p>
+                    <button>{slide.button}</button>
+                  </div>
+              </div>)}
+          </Slider>
+      </div>
+    </div>
+  )
+}
+
+export default Portfolio
+
+/*
+ejemplo original
+<div className="container">
             {data.map(item => (
             <motion.div 
               layoutId={item.id}
@@ -95,8 +114,4 @@ function Portfolio() {
         </motion.div>
       )}
       </AnimatePresence>
-    </div>
-  )
-}
-
-export default Portfolio
+*/

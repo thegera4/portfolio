@@ -1,20 +1,51 @@
 @import "../../global.scss";
 
+@mixin border-gradient($from, $to, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+  
+  box-shadow: 0 1px 0 $weight rgba($mix-sub-to, .25),
+              0 -1px 0 $weight rgba($mix-sub-from, .25),
+              1px 0 0 $weight rgba($mix-sub-to, .25),
+              -1px 0 0 $weight  rgba($mix-sub-from, .25),
+              1px -1px 0 $weight rgba($mix-main, .5),
+              -1px 1px 0 $weight rgba($mix-main, .5),
+              1px 1px 0 $weight rgba($to, .75),
+              -1px -1px 0 $weight rgba($from, .75);
+}
+
 .portfolioList {
     font-size: 14px;
     margin-right: 50px;
     padding: 7px;
-    border-radius: 10px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+        user-select: none;
     cursor: pointer;
 
     @include mobile{
         margin-right: 0;
-        
-       
     }
 
     &.active{
-        background-color: $mainColor;
-        color: white;
+        border-bottom: 5px dotted green;
+        font-weight: bold;
+        color: darkgreen;
+        animation: 1s shake;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        
+        @keyframes shake {
+            0% { transform: skewX(-15deg); }
+            5% { transform: skewX(15deg); }
+            10% { transform: skewX(-15deg); }
+            15% { transform: skewX(15deg); }
+            20% { transform: skewX(0deg); }
+            100% { transform: skewX(0deg); }
+        }
+       
     }
 }
+
