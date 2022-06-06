@@ -16,6 +16,15 @@ $width2: 580px;
     }
 }
 
+$width3: 375px;
+//$height3: 670px;
+@mixin mobile5 {
+    @media (max-width: $width3 ) {
+        @content;
+    }
+}
+
+
 $height: 974px;
 
 @mixin mobile3 {

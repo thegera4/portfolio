@@ -98,9 +98,18 @@
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
-                    -ms-user-select: none;
-    -webkit-user-select: none;
-        user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+                    user-select: none;
+
+
+
+            @include mobile3{
+                top: 30%;
+            }
+
+            
+
         }
         .slider-content .inner h1 {
             font-weight: 500;
@@ -108,15 +117,32 @@
             max-width: 840px;
             color: #FFFFFF;
             font-size: 50px;
+
+            @include mobile2{
+                font-size: 40px;
+            }
+
+            @include mobile5{
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
         }
         .slider-content .inner p {
             color: #FFFFFF;
             font-size: 24px;
             margin: 20px auto 30px;
             max-width: 640px;
+
+
+            @include mobile2{
+                font-size: 20px;
+            }
+
+            @include mobile5{
+                display: none;
+            }
         }
            
-        
     }
 
     .previousButton {
@@ -129,9 +155,24 @@
             text-indent: -9999px;
             background: url('../../assets/arrow.png') no-repeat center center / 100px;
             transform: rotateY(180deg);
-            
             color: white;
             cursor: pointer;
+
+           @include mobile2{
+                transform: scale(.8) rotateY(180deg);
+                top:53%;
+                left: -5%;
+            }
+
+            @include mobile3{
+                top: 40%;
+            }
+
+            @include mobile5{
+                transform: scale(.5) rotateY(180deg);
+                top:53%;
+                left: -5%;
+            }
     }
     .nextButton {
             position: absolute;
@@ -145,6 +186,22 @@
             background: url('../../assets/arrow.png') no-repeat center center / 100px;
             
             cursor: pointer;
+
+            @include mobile2{
+                transform: scale(.8);
+                margin-top:45px;
+                right: -5%;
+            }
+
+            @include mobile3{
+                top: 33%;
+            }
+
+            @include mobile5{
+                transform: scale(.5);
+                top:45%;
+                right: -5%;
+            }
     }
 
 }
