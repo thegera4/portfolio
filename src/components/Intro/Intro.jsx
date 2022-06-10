@@ -13,9 +13,12 @@ import JavaLogo from "../../assets/java-logo-1.png"
 import FireLogo from "../../assets/firebase-logo.png"
 import PostLogo from "../../assets/postgre.png"
 import SQLogo from "../../assets/SQLite_logo.png"
+import { useTranslation } from "react-i18next";
 
 
 function Intro() {
+
+  const { t } = useTranslation();
 
   const variantsImg = {
     hidden: {
@@ -136,10 +139,10 @@ function Intro() {
             animate="visible"
             variants={variantsAboutMe}>
         <div className="bottomWrapper">
-          <h2>About me:</h2>
-          <p>Im a mechatronics engineer that is passionate about technology and learning new things.</p>
-          <p>This is my personal webpage to showcase my portfolio. If you are interested in working with me,</p>
-          <p>you can send me in the contact section, or you can contact me via my social media.</p>
+          <h2>{t("About_Me")}</h2>
+          <p>{t("Intro_Description")}</p>
+          <p>{t("Intro_Description2")}</p>
+          <p>{t("Intro_Description3")}</p>
           <br/>
           <h3>These are some of the techonologies that I have used:</h3>
           <div className="iconsWrapper">
