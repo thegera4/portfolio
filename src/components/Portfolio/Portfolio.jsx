@@ -8,21 +8,18 @@ import {
 } from '../../data';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 //import { AnimatePresence, motion } from "framer-motion"
+import { useTranslation } from "react-i18next";
+import LanguageSelect from "../../languageSelect";
 
 function Portfolio() {
 
+  const { t } = useTranslation();
   const [selectedId, setSelectedId] = useState(null)
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
 
   const LIST = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
     {
       id: "web",
       title: "Web App",
@@ -35,9 +32,6 @@ function Portfolio() {
 
   useEffect(() =>{
     switch(selected){
-      case "featured":
-        setData(featuredPortfolio);
-        break;
       case "web":
         setData(webPortfolio);
         break;
@@ -52,7 +46,7 @@ function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>{t("Portfolio")}</h1>
       <ul>
         {LIST.map(item => (
           <PortfolioList 

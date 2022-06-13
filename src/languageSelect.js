@@ -29,10 +29,11 @@ const LanguageSelect = () => {
   console.log(languageMap[selected].label)
 
   return (
-    <div className="d-flex justify-content-end align-items-center language-select-root">
-      <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
+    <div
+    className="d-flex justify-content-end align-items-center language-select-root">
+      <Button style={{color: "black"}} onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
             <img style={{ width: '20px'}} src={languageMap[selected].label === "English" ? English : Spanish} alt="Flag"/>{languageMap[selected].label}
-        <ArrowDropDown fontSize="small" />
+        <ArrowDropDown fontSize="small" style={{color: "black"}}  />
       </Button>
       <Popover
         open={!!menuAnchor}

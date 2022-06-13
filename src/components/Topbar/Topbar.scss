@@ -3,7 +3,9 @@
 .topbar{
     width: 100%;
     height: 70px;
-    background-color: white;
+    background: rgb(141,141,148);
+    background: rgb(126,126,126);
+    background: linear-gradient(270deg, rgba(170,170,170) 0%, rgba(177,177,177,1) 32%, rgba(220,220,220,1) 50%, rgba(234,234,234) 69%,rgb(233, 231, 231) 71%);
     color: $mainColor;
     position: fixed;
     top: 0;
@@ -46,7 +48,7 @@
             .itemContainer{
                 display: flex;
                 align-items: center;
-                margin-left: 16px;
+                margin-left: 128px;
 
                 @include mobile{
                     display: none;
@@ -54,12 +56,12 @@
                 
 
                 .icon{
-                    font-size: 18px;
+                    font-size: 20px;
                     margin-right: 5px;
                 }
 
                 span{
-                    font-size: 15px;
+                    font-size: 18px;
                     font-weight: 500;
                 }
             }
@@ -87,7 +89,8 @@
     }
 
     &.active{
-        background-color: $mainColor;
+        background: rgb(69,163,79);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(37, 116, 25) 15%, rgb(14, 44, 10) 100%);
         color: white;
 
         .hamburger{

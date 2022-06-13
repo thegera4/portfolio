@@ -3,8 +3,13 @@
     "Download_CV": "Descargar CV",
     "Github_Profile": "Perfil de Github",
     "LinkedIn_Profile": "Perfil de LinkedIn",
-    "About_Me": "Sobre mi:",
-    "Intro_Description": "Soy un ingeniero mecatronico apasionado por la tecnologia y el aprendizaje de nuevas cosas.",
-    "Intro_Description2": "Este es mi sitio web personal para mostrar mi portafolio. Si estas interesado en trabajar conmigo,",
-    "Intro_Description3": "puedes enviarme un mensaje en la seccion de contacto, o puedes contactarme a traves de mis redes sociales."
+    "Hi": "Hola, soy",
+    "About_Me": "Sobre mí:",
+    "Intro_Description": "Soy un ingeniero mecatrónico apasionado por la tecnología y el aprendizaje de nuevas cosas.",
+    "Intro_Description2": "Este es mi sitio web para mostrar mi portafolio. Si estas interesado en trabajar conmigo,",
+    "Intro_Description3": "puedes enviarme un mensaje en la sección de contacto, o puedes contactarme por medio de mis redes sociales.",
+    "Intro_Description4": "Estas son algunas tecnologías con las que he trabajado:",
+    "Home": "Inicio",
+    "Contact": "Contacto",
+    "Portfolio": "Portafolio"
 }

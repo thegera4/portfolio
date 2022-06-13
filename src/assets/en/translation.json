@@ -3,9 +3,14 @@
     "Download_CV": "Download CV",
     "Github_Profile": "Github profile",
     "LinkedIn_Profile": "LinkedIn profile",
+    "Hi": "Hi there, I´m",
     "About_Me": "About me:",
     "Intro_Description": "Im a mechatronics engineer that is passionate about technology and learning new things.",
     "Intro_Description2": "This is my personal webpage to showcase my portfolio. If you are interested in working with me,",
-    "Intro_Description3": "you can send me a message in the contact section, or you can contact me via my social media."
+    "Intro_Description3": "you can send me a message in the contact section, or you can contact me via my social media.",
+    "Intro_Description4": "These are some of the technologies that I have used:",
+    "Home": "Home",
+    "Contact": "Contact",
+    "Portfolio": "Portfolio"
 
 }

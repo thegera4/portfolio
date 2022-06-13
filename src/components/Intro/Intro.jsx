@@ -14,6 +14,7 @@ import FireLogo from "../../assets/firebase-logo.png"
 import PostLogo from "../../assets/postgre.png"
 import SQLogo from "../../assets/SQLite_logo.png"
 import { useTranslation } from "react-i18next";
+import ParticleBackground from '../particleBackground';
 
 
 function Intro() {
@@ -107,12 +108,13 @@ function Intro() {
         </motion.div>
       </div>
       <div className="right">
+    
         <div className="wrapper">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={variantsH2}>
-            <h2>Hi there, I´m</h2>
+            <h2>{t("Hi")}</h2>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -144,7 +146,7 @@ function Intro() {
           <p>{t("Intro_Description2")}</p>
           <p>{t("Intro_Description3")}</p>
           <br/>
-          <h3>These are some of the techonologies that I have used:</h3>
+          <h3>{t("Intro_Description4")}</h3>
           <div className="iconsWrapper">
             <div className="img">
              <img src={JSLogo} alt="Javascript" />

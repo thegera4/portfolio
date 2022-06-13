@@ -7,9 +7,12 @@ import Contact from './components/Contact/Contact';
 import './app.scss';
 import { useState } from 'react';
 import Menu from './components/Menu/Menu';
+//import ParticleBackground from './components/particleBackground';
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -20,6 +23,7 @@ function App() {
         {/*<Works />*/}
         {/*<Testimonials />*/}
         <Contact />
+        {/*<ParticleBackground />*/}
       </div>
     </div>
   );
