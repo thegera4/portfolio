@@ -9,13 +9,17 @@ import ListItem from "@mui/material/ListItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Spanish from './assets/sp.png'
 import English from './assets/en.png'
+import { connect } from "react-redux";
+import { setLanguage } from "./actions/index";
+
 
 const languageMap = {
   en: { label: "English", dir: "ltr", active: true },
   es: { label: "Español", dir: "ltr", active: false }
 };
 
-const LanguageSelect = () => {
+const LanguageSelect = (props) => {
+ 
   const [selected, setSelected] = React.useState("en");
 
   const { t } = useTranslation();
@@ -24,15 +28,19 @@ const LanguageSelect = () => {
 
   React.useEffect(() => {
     document.body.dir = languageMap[selected].dir;
-  }, [menuAnchor, selected]);
-
-  console.log(languageMap[selected].label)
+    props.setLanguage(selected);
+  }, [menuAnchor, props, selected]);
 
   return (
     <div
     className="d-flex justify-content-end align-items-center language-select-root">
-      <Button style={{color: "black"}} onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
-            <img style={{ width: '20px'}} src={languageMap[selected].label === "English" ? English : Spanish} alt="Flag"/>{languageMap[selected].label}
+      <Button style={{color: "black"}} lang= {selected} onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
+            <img 
+            style={{ width: '20px'}} 
+            src={languageMap[selected].label === "English" ? English : Spanish} 
+            alt="Flag"/>
+            {languageMap[selected].label}
+           
         <ArrowDropDown fontSize="small" style={{color: "black"}}  />
       </Button>
       <Popover
@@ -71,4 +79,17 @@ const LanguageSelect = () => {
   );
 };
 
-export default LanguageSelect;
+export function mapStateToProps(state){
+  return {
+    language: state.language
+  };
+}
+
+export function mapDispatchToProps(dispatch){
+  return {
+    setLanguage: language => dispatch(setLanguage(language))
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LanguageSelect);
+

@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import './Contact.scss'
+import { useTranslation } from "react-i18next";
+import Bkg from '../../assets/cool-background-triang.png'
+
 
 function Contact() {
 
+  const { t } = useTranslation();
   const [message, setMessage] = useState(false)
 
   const handleSubmit = (e) => {
@@ -13,16 +17,19 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TIRGN4-UmhMKqS6I6NN7x4hBQ_-yY24X6Q&usqp=CAU" 
-        alt="Contact me"/>
+        <img src={Bkg} alt="Contact me"/>
       </div>
       <div className="right">
-        <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit}>
+        <h2>{t("Contact")}</h2>
+        <form 
+        onSubmit={handleSubmit} 
+        action="mailto:thegera4@hotmail.com"
+        method="post"
+        encType="text/plain">
           <input type="email" placeholder="Email"/>
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thanks for you message! I'll reply ASAP.</span>}
+          <textarea placeholder={t("Message")}></textarea>
+          <button type="submit">{t("Send")}</button>
+          {message && <span>{t("Asap")}</span>}
         </form>
       </div>
     

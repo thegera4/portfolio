@@ -6,8 +6,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../../languageSelect";
+import CV from "../../assets/CV Juan Gerardo eng v3.pdf";
+
 
 function Topbar({ menuOpen, setMenuOpen }) {
+
+  
 
   const { t } = useTranslation();
 
@@ -22,19 +26,19 @@ function Topbar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <EmailIcon className="icon"/>
-            <span>thegera4@hotmail.com</span>
+            <span><a href="mailto:thegera4@hotmail.com">thegera4@hotmail.com</a></span>
           </div>  
           <div className="itemContainer">
             <DownloadIcon className="icon"/>
-            <span>{t("Download_CV")}</span>
+            <span><a href={CV} download>{t("Download_CV")}</a></span>
           </div>  
           <div className="itemContainer">
             <GitHubIcon className="icon"/>
-            <span>{t("Github_Profile")}</span>
+            <span><a href="https://github.com/thegera4?tab=repositories" target="_blank" rel="noreferrer">{t("Github_Profile")}</a></span>
           </div>    
           <div className="itemContainer">
             <LinkedInIcon className="icon"/>
-            <span>{t("LinkedIn_Profile")}</span>
+            <span><a href="https://www.linkedin.com/in/juan-gerardo-medellin-ibarra-8b207058/?originalSubdomain=mx" target="_blank" rel="noreferrer">{t("LinkedIn_Profile")}</a></span>
           </div>      
         </div>
         <div className="right">

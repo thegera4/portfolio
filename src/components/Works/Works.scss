@@ -6,50 +6,50 @@
     align-items: center;
     justify-content: center;
     position: relative;
-
+    width: 100%;
     .arrow{
         height: 60px;
         font-size: 80px;
         position: absolute;
         color: white;
         cursor: pointer;
-
+        
         @include mobile{
             bottom: 50px;
             justify-content: space-between;
         }
         
-
+        
         &.left{
             left: 100px;
         }
-
+        
         &.right{
             right: 100px;
         }
     }
-
+    
     .slider{
-        height: 350px;
+        height: 400px;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
-
+        
         @include mobile{ 
             height: 60%;
             top: 5rem;
             justify-content: center;
         }
         
-
+        
         .container{
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
-
-
+            
+            
             .item{
                 width: 700px;
                 height: 100%;
@@ -58,31 +58,31 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                
                 @include mobile{ 
                     flex-direction: column;
-
+                    
                 }
-
-
+                
+                
                 .left{
                     flex: 4;
                     height: 80%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
+                    
                     @include mobile{ 
-                    flex:5
+                        flex:5
                     }
-
+                    
                     .leftContainer{
                         width: 90%;
                         height: 70%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-
+                        
                         .imgContainer{
                             width: 40px;
                             height: 40px;
@@ -91,17 +91,17 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-
+                            
                             img{
                                 width: 25px;
                             }
-
+                            
                         }
-
+                        
                         h2{
                             font-size: 20px;
                         }
-
+                        
                         p{
                             font-size: 13px;
                         }
@@ -121,15 +121,15 @@
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
-
+                    
                     @include mobile{ 
-                    flex:5
+                        flex:5
                     }
-
+                    
                     img{
                         width: 400px;
                         transform: rotate(-10deg);
-
+                        
                         @include mobile{ 
                             transform: rotate(0deg);
                             width: 320px;
@@ -139,7 +139,7 @@
                 }
             }
         }
-
+        
     }
 
 }

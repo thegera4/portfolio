@@ -10,16 +10,17 @@ import Menu from './components/Menu/Menu';
 //import ParticleBackground from './components/particleBackground';
 
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+   
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
-        <Portfolio />
+        <Portfolio/>
         {/*<Works />*/}
         {/*<Testimonials />*/}
         <Contact />
