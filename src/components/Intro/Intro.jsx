@@ -14,7 +14,7 @@ import FireLogo from "../../assets/firebase-logo.png"
 import PostLogo from "../../assets/postgre.png"
 import SQLogo from "../../assets/SQLite_logo.png"
 import { useTranslation } from "react-i18next";
-import ParticleBackground from '../particleBackground';
+//import ParticleBackground from '../particleBackground';
 
 
 function Intro() {
@@ -148,34 +148,34 @@ function Intro() {
           <br/>
           <h3>{t("Intro_Description4")}</h3>
           <div className="iconsWrapper">
-            <div className="img">
+            <div className="imgJS">
              <img src={JSLogo} alt="Javascript" />
             </div>
             <div className="img">
               <img src={HTMlLogo} alt="Html" />
             </div>
-            <div className="img">
+            <div className="imgCSS">
               <img src={CSSLogo} alt="Css" />
             </div>
-            <div className="img">
+            <div className="imgReact">
               <img src={ReactLogo} alt="React" />
             </div>
             <div className="img">
               <img src={ReduxLogo} alt="Redux" />
             </div>
             <div className="img">
+              <img src={PostLogo} alt="Postgre SQL" />
+            </div>
+            <div className="imgKotlin">
               <img src={KotlinLogo} alt="Kotlin" />
             </div>
             <div className="img">
              <img src={JavaLogo} alt="Java" />
             </div>
-            <div className="img">
+            <div className="imgFirebase">
              <img src={FireLogo} alt="Firebase" />
             </div>
-            <div className="img">
-              <img src={PostLogo} alt="Postgre SQL" />
-            </div>
-             <div className="img">
+             <div className="imgSQL">
               <img src={SQLogo} alt="SQLite" />
             </div>
           </div>

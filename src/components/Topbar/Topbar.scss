@@ -44,7 +44,6 @@
                 }
             }
 
-
             .itemContainer{
                 display: flex;
                 align-items: center;
@@ -53,8 +52,13 @@
                 @include mobile{
                     display: none;
                 }
+                @include mobile6{
+                        margin-left: 64px;
+                }
+                @include mobile7{
+                        margin-left: 16px;
+                }
                 
-
                 .icon{
                     font-size: 20px;
                     margin-right: 5px;

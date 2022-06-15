@@ -23,12 +23,11 @@ function Contact() {
         <h2>{t("Contact")}</h2>
         <form 
         onSubmit={handleSubmit} 
-        action="mailto:thegera4@hotmail.com"
-        method="post"
-        encType="text/plain">
-          <input type="email" placeholder="Email"/>
-          <textarea placeholder={t("Message")}></textarea>
-          <button type="submit">{t("Send")}</button>
+        action="https://formsubmit.co/thegera4@hotmail.com"
+        method="POST">
+          <input type="email" name="email" placeholder="Email"/>
+          <textarea name="text" placeholder={t("Message")}></textarea>
+          <button name="button" type="submit">{t("Send")}</button>
           {message && <span>{t("Asap")}</span>}
         </form>
       </div>
@@ -38,3 +37,4 @@ function Contact() {
 }
 
 export default Contact
+

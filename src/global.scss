@@ -24,6 +24,19 @@ $width3: 375px;
     }
 }
 
+$width4: 1660px;
+@mixin mobile6 {
+    @media (max-width: $width4 ) {
+        @content;
+    }
+}
+
+$width5: 1330px;
+@mixin mobile7 {
+    @media (max-width: $width5 ) {
+        @content;
+    }
+}
 
 $height: 955px;
 
@@ -42,3 +55,10 @@ $height2: 875px;
     }
 }
 
+$height3: 575px;
+
+@mixin mobile8 {
+    @media (max-height: $height3) {
+        @content;
+    }
+}

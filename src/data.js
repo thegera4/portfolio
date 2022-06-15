@@ -59,7 +59,7 @@ export const mobilePortfolio = [
         img: CoolMorning,
         button: "Download app",
         boton: "Descargar app",
-        description: "This Android app was developed for a local gift shop that operates in the city Torreon in Mexico. It includes the menu, instructions to puchase the products and the contact information.",
+        description: "This Android app was developed for a local gift shop that operates in the city Torreon in Mexico. It includes the menu, instructions to purchase the products and the contact information from the store.",
         descripcion: "Esta app para Android se desarrolló para una tienda local en la ciudad de Torreón, México. Incluye el menú de productos, instruciones sobre como hacer un pedido y la información de contacto de la tienda.",
         link: "https://play.google.com/store/apps/details?id=com.app.coolmorning"
     },

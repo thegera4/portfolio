@@ -14,11 +14,13 @@
     align-items: center;
     justify-content: center;
     transition: all .5s ease;
-
+    
+    
+    
     &.active{
         right: 0;
     }
-
+    
     ul{
         margin: 0;
         padding: 0;
@@ -27,18 +29,66 @@
         font-weight: 300;
         color: white;
         width: 70%;
-
+        
+        
+        
+        
         li{
             margin-bottom: 55px;
+
+           
+
+            @include mobile4 {
+                margin-bottom: 25px;
+            }
+
+            
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6), 
+            &:nth-child(7),
+            &:nth-child(8){
+                display: none;
+            }
+
+            @include mobile{
+
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6), 
+                &:nth-child(7),
+                &:nth-child(8){
+                    display: block;
+                }
+
+                font-size: 17px;  
+
+                @include mobile8 {
+                    margin-bottom: 15px;
+
+                    &:nth-child(4),
+                    &:nth-child(6){
+                    display: none;
+                    }
+                }
+            }
+            
+            
             a{
-                font-size: inherit;
+                font-size: 30px; //cambie este de inherit
                 color: inherit;
                 text-decoration: none;
+
+                @include mobile {
+                    font-size: 17px;
+                }
             }
 
             &:hover{
                 font-weight: 500;
             }
+
         }
     }
 }
