@@ -16,7 +16,6 @@
     "i18next-http-backend": "^1.4.1",
     "i18next-xhr-backend": "^3.2.2",
     "ityped": "^1.0.3",
-    "particles.js": "^2.0.0",
     "react": "^18.1.0",
     "react-animated-slider": "^2.0.0",
     "react-dom": "^18.1.0",
