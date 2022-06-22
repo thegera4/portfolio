@@ -4,14 +4,19 @@ import PaintImages from "../src/assets/Mobile/Paint_Images.JPG"
 import Workout from "../src/assets/Mobile/Workout_App.JPG"
 import FlagApp from "../src/assets/Mobile/Flag_App.JPG"
 import More from "../src/assets/Mobile/More.jpg"
+import Movies from "../src/assets/Web/lazynema.JPG"
 
 export const webPortfolio = [
     {
         id: 1,
-        title: "E-commerce",
-        img: "https://www.designermill.com/wp-content/uploads/2016/05/Amazing-UI-Kit-eCommerce-Web-App.jpg",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Movies App",
+        titulo: "App de películas",
+        img: Movies,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "Classic movies app that you build using an API (TMDB API). This app was created with React and CSS with SASS.",
+        descripcion: "Esta es la clásica app de películas que se construye usando una API (TMDB API). Esta app fue creada con React y el CSS con SASS.",
+        link: "https://lazynema.vercel.app/"
     },
     {
         id: 2,
