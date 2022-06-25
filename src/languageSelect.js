@@ -39,8 +39,7 @@ const LanguageSelect = (props) => {
             style={{ width: '20px'}} 
             src={languageMap[selected].label === "English" ? English : Spanish} 
             alt="Flag"/>
-            {languageMap[selected].label}
-           
+            {languageMap[selected].label} 
         <ArrowDropDown fontSize="small" style={{color: "black"}}  />
       </Button>
       <Popover

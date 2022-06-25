@@ -62,3 +62,51 @@ $height3: 575px;
         @content;
     }
 }
+
+$height4: 1050px;
+
+@mixin mobile9 {
+    @media (max-height: $height4) {
+        @content;
+    }
+}
+
+$height5: 1000px;
+
+@mixin mobile10 {
+    @media (max-height: $height5) {
+        @content;
+    }
+}
+
+$height6: 770px;
+
+@mixin mobile11 {
+    @media (max-height: $height6) {
+        @content;
+    }
+}
+
+$height7: 670px;
+
+@mixin mobile12 {
+    @media (max-height: $height7) {
+        @content;
+    }
+}
+
+$height8: 520px;
+
+@mixin mobile13 {
+    @media (max-height: $height8) {
+        @content;
+    }
+}
+
+$height9: 480px;
+
+@mixin mobile14 {
+    @media (max-height: $height9) {
+        @content;
+    }
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Contact.scss'
 import { useTranslation } from "react-i18next";
-import Bkg from '../../assets/cool-background-triang.png'
+import Animation from '../3D/Animation'
 
 
 function Contact() {
@@ -17,10 +17,13 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src={Bkg} alt="Contact me"/>
+        <Animation />
       </div>
       <div className="right">
-        <h2>{t("Contact")}</h2>
+        <div class="content">
+          <h2>{t("Contact")}</h2>
+          <h2>{t("Contact")}</h2>
+        </div>
         <form 
         onSubmit={handleSubmit} 
         action="https://formsubmit.co/thegera4@hotmail.com"

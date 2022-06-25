@@ -9,9 +9,7 @@ import LanguageSelect from "../../languageSelect";
 import CV from "../../assets/CV Juan Gerardo eng v3.pdf";
 
 
-function Topbar({ menuOpen, setMenuOpen }) {
-
-  
+function Topbar({ menuOpen, setMenuOpen }) { 
 
   const { t } = useTranslation();
 
