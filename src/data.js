@@ -5,6 +5,7 @@ import Workout from "../src/assets/Mobile/Workout_App.JPG"
 import FlagApp from "../src/assets/Mobile/Flag_App.JPG"
 import More from "../src/assets/Mobile/More.jpg"
 import Movies from "../src/assets/Web/lazynema.JPG"
+import WebTemplate from "../src/assets/Web/templateWeb.jpg"
 
 export const webPortfolio = [
     {
@@ -20,10 +21,14 @@ export const webPortfolio = [
     },
     {
         id: 2,
-        title: "Relax App",
-        img: "https://muffingroup.com/blog/wp-content/uploads/2020/05/calm.jpg",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Responsive Web Page Template",
+        titulo: "Plantilla de página web responsiva",
+        img: WebTemplate,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This is a simple responsive web page template built with pure html and css.",
+        descripcion: "Esta es una simple plantilla de página web responsiva construida con html y css puro.",
+        link: "https://responsive-web-page-template.vercel.app/"
     },
     {
         id: 3,
