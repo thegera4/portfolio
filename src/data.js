@@ -6,6 +6,8 @@ import FlagApp from "../src/assets/Mobile/Flag_App.JPG"
 import More from "../src/assets/Mobile/More.jpg"
 import Movies from "../src/assets/Web/lazynema.JPG"
 import WebTemplate from "../src/assets/Web/templateWeb.jpg"
+import Todos from "../src/assets/Web/todoList.JPG"
+import Budget from "../src/assets/Web/Budget.JPG"
 
 export const webPortfolio = [
     {
@@ -32,17 +34,25 @@ export const webPortfolio = [
     },
     {
         id: 3,
-        title: "Bank App",
-        img: "https://store-images.s-microsoft.com/image/apps.35577.f15d0f85-46ea-4718-b2fe-f3c029eb49d5.9d9dc0fd-59fe-4dc0-8200-29b8fd740427.fcabd77b-4df3-40ff-a2bb-18b568d947a5",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Todo List",
+        titulo: "Lista de tareas",
+        img: Todos,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This is the classic To Do List App made with react",
+        descripcion: "Esta es la clásica app de lista de tareas construida con react",
+        link: "https://todo-list-sigma-fawn.vercel.app/"
     },
     {
         id: 4,
-        title: "Banking App",
-        img: "https://meetaristo.com/images/case-studies/cbank.jpg",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Budget App",
+        titulo: "App de presupuesto",
+        img: Budget,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This app allows you to calculate your budget. It was created with HTML, CSS and Javascript.",
+        descripcion: "Esta app te permite calcular tu presupuesto. Fue creada con HTML, CSS y Javascript.",
+        link: "https://budget-app-topaz.vercel.app/"
     },
     {
         id: 5,
