@@ -8,6 +8,7 @@ import Movies from "../src/assets/Web/lazynema.JPG"
 import WebTemplate from "../src/assets/Web/templateWeb.jpg"
 import Todos from "../src/assets/Web/todoList.JPG"
 import Budget from "../src/assets/Web/Budget.JPG"
+import Weather from "../src/assets/Web/WeatherApp.JPG"
 
 export const webPortfolio = [
     {
@@ -56,10 +57,14 @@ export const webPortfolio = [
     },
     {
         id: 5,
-        title: "Social Media App",
-        img: "https://assets-global.website-files.com/5d7f647dbda9c6ec4ecf6d36/6156d9c17594ea44a453a986_socialnetworkhero.png",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Weather App",
+        titulo: "App de clima",
+        img: Weather,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This is the classic weather app made with React, tailwind and using the Open Weather API.",
+        descripcion: "Esta es la clásica app de clima construida con React, tailwind y usando la API de Open Weather.",
+        link: "https://weather-app-murex-alpha.vercel.app/"
     },
     {
         id: 6,
@@ -68,7 +73,7 @@ export const webPortfolio = [
         button: "See more",
         description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
     },
-  
+ 
 ]
 
 export const mobilePortfolio = [
