@@ -9,6 +9,7 @@ import WebTemplate from "../src/assets/Web/templateWeb.jpg"
 import Todos from "../src/assets/Web/todoList.JPG"
 import Budget from "../src/assets/Web/Budget.JPG"
 import Weather from "../src/assets/Web/WeatherApp.JPG"
+import Booking from "../src/assets/Web/BookingApp.JPG"
 
 export const webPortfolio = [
     {
@@ -68,10 +69,14 @@ export const webPortfolio = [
     },
     {
         id: 6,
-        title: "UI Design",
-        img: "https://i.ytimg.com/vi/mYp11gGzgmQ/maxresdefault.jpg",
-        button: "See more",
-        description: "In sit dolor Lorem officia Lorem sint amet dolore id excepteur sit.Id est in in irure adipisicing mollit irure ex sint."
+        title: "Booking App",
+        titulo: "App de reservas para viajes",
+        img: Booking,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This is de UI design for a fullstack booking app that is still in development. It will use the MERN stack of technologies.",
+        descripcion: "Esta es la intefaz de usuario para una app de reservas para viajes que aún está en desarrollo. Usará las tecnologías MERN.",
+        link: "https://booking-ui-ten.vercel.app/"
     },
  
 ]
