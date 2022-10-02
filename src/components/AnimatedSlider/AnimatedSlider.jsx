@@ -44,7 +44,6 @@ export const AnimatedSlider = () => {
     <>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
-          className="slider-image"
           key={page}
           src={images[imageIndex]}
           custom={direction}
