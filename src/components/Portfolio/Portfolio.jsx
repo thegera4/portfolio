@@ -3,6 +3,7 @@ import PortfolioList from '../PortfolioList/PortfolioList'
 import './Portfolio.scss'
 import {webPortfolio,mobilePortfolio} from '../../data';
 import Slider from 'react-animated-slider';
+//import Slider from "react-slick";
 import 'react-animated-slider/build/horizontal.css';
 import { useTranslation } from "react-i18next";
 import { connect } from "react-redux";
@@ -13,6 +14,14 @@ function Portfolio(props) {
   const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
 
+  /*const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }*/
+  
   const LIST = [
     {
       id: "web",
@@ -64,7 +73,18 @@ function Portfolio(props) {
                     <button onClick={()=>window.open(slide.link, '_blank')}>{props.language === "en" ? slide.button : slide.boton}</button>
                   </div>
               </div>)}
-          </Slider>
+      </Slider>
+      {/*<Slider {...settings}>
+        {data.map((slide, index) =>
+          <div key={index} className="slider-content">
+            <div className="inner">
+              <h1>{props.language === "en" ? slide.title : slide.titulo}</h1>
+              <p>{props.language === "en" ? slide.description : slide.descripcion}</p>
+              <button onClick={() => window.open(slide.link, '_blank')}>{props.language === "en" ? slide.button : slide.boton}</button>
+            </div>
+          </div>)}
+      </Slider>*/}
+
       </div>
     </div>
   )
