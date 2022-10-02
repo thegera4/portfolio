@@ -21,7 +21,6 @@ function Portfolio(props) {
     slidesToShow: 1,
     slidesToScroll: 1
   }*/
-  
   const LIST = [
     {
       id: "web",
