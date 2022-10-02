@@ -7,7 +7,6 @@ import "./AnimatedSlider.css"
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-
 const variants = {
   enter: (direction) => {
     return {
@@ -29,12 +28,6 @@ const variants = {
   }
 };
 
-/**
- * Experimenting with distilling swipe offset and velocity into a single variable, so the
- * less distance a user has swiped, the more velocity they need to register as a swipe.
- * Should accomodate longer swipes and short flicks without having binary checks on
- * just distance thresholds and velocity > 0.
- */
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
@@ -42,13 +35,7 @@ const swipePower = (offset, velocity) => {
 
 export const AnimatedSlider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
-
-  // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
-  // then wrap that within 0-2 to find our image ID in the array below. By passing an
-  // absolute page index as the `motion` component's `key` prop, `AnimatePresence` will
-  // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
   const imageIndex = wrap(0, images.length, page);
-
   const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
@@ -57,6 +44,7 @@ export const AnimatedSlider = () => {
     <>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
+          className="slider-image"
           key={page}
           src={images[imageIndex]}
           custom={direction}
@@ -73,7 +61,6 @@ export const AnimatedSlider = () => {
           dragElastic={1}
           onDragEnd={(e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
-
             if (swipe < -swipeConfidenceThreshold) {
               paginate(1);
             } else if (swipe > swipeConfidenceThreshold) {

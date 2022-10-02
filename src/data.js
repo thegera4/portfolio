@@ -5,15 +5,39 @@ import Workout from "../src/assets/Mobile/Workout_App.JPG"
 import FlagApp from "../src/assets/Mobile/Flag_App.JPG"
 import More from "../src/assets/Mobile/More.jpg"
 import Movies from "../src/assets/Web/lazynema.JPG"
-import WebTemplate from "../src/assets/Web/templateWeb.jpg"
+import WebTemplate from "../src/assets/Web/templateWeb.PNG"
 import Todos from "../src/assets/Web/todoList.JPG"
 import Budget from "../src/assets/Web/Budget.JPG"
 import Weather from "../src/assets/Web/WeatherApp.JPG"
 import Booking from "../src/assets/Web/BookingApp.JPG"
+import Befos from "../src/assets/Web/befos.PNG"
+import tuSpacio from "../src/assets/Web/tuSpacio.PNG"
 
 export const webPortfolio = [
     {
         id: 1,
+        title: "tuSpacio (Group Project)",
+        titulo: "tuSpacio (Proyecto Grupal)",
+        img: tuSpacio,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This was my group project made during the Henry Bootcamp. This is a Fullstack App using PostgreSQL, Express, React, Redux and NodeJS. The deployment was made using Railway (Backend) and Vercel (Frontend). We also implemented other technologies such as: Stripe (for checkout), Auth0 (for authentication) as well as a Material UI. The admin has access to a complete dashboard for several actions related to the ecommerce.",
+        descripcion: "Este fue mi proyecto grupal realizado durante el Bootcamp de Henry. Esta es un e-commerce Fullstack utilizando PostgreSQL, Express, React, Redux y NodeJS. El despliegue se realizó utilizando Railway (Backend) y Vercel (Frontend). También implementamos otras tecnologías como: Stripe (para el checkout), Auth0 (para la autenticación) así como Material UI. El administrador tiene acceso a un panel de control completo para varias acciones relacionadas con el ecommerce.",
+        link: "https://tuspacio.vercel.app/"
+    },
+    {
+        id: 2,
+        title: "Befos (Individual Project)",
+        titulo: "Befos (Proyecto Individual)",
+        img: Befos,
+        button: "Go to Webpage",
+        boton: "Ir a la página",
+        description: "This was my individual project made during the Henry Bootcamp. This is a Fullstack App using PostgreSQL, Express, React, Redux and NodeJS. The deployment was made using Heroku (Backend) and Vercel (Frontend).",
+        descripcion: "Este fue mi proyecto individual realizado durante el Bootcamp de Henry. Esta es una aplicación Fullstack utilizando PostgreSQL, Express, React, Redux y NodeJS. El despliegue se realizó utilizando Heroku (Backend) y Vercel (Frontend).",
+        link: "https://pi-dogs-main-seven.vercel.app/"
+    },
+    {
+        id: 3,
         title: "Movies App",
         titulo: "App de películas",
         img: Movies,
@@ -24,7 +48,7 @@ export const webPortfolio = [
         link: "https://lazynema.vercel.app/"
     },
     {
-        id: 2,
+        id: 4,
         title: "Responsive Web Page Template",
         titulo: "Plantilla de página web responsiva",
         img: WebTemplate,
@@ -35,7 +59,7 @@ export const webPortfolio = [
         link: "https://responsive-web-page-template.vercel.app/"
     },
     {
-        id: 3,
+        id: 5,
         title: "Todo List",
         titulo: "Lista de tareas",
         img: Todos,
@@ -46,7 +70,7 @@ export const webPortfolio = [
         link: "https://todo-list-sigma-fawn.vercel.app/"
     },
     {
-        id: 4,
+        id: 6,
         title: "Budget App",
         titulo: "App de presupuesto",
         img: Budget,
@@ -57,7 +81,7 @@ export const webPortfolio = [
         link: "https://budget-app-topaz.vercel.app/"
     },
     {
-        id: 5,
+        id: 7,
         title: "Weather App",
         titulo: "App de clima",
         img: Weather,
@@ -68,7 +92,7 @@ export const webPortfolio = [
         link: "https://weather-app-murex-alpha.vercel.app/"
     },
     {
-        id: 6,
+        id: 8,
         title: "Booking App",
         titulo: "App de reservas para viajes",
         img: Booking,

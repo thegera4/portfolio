@@ -20,7 +20,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
           <LanguageSelect/>
           <div className="itemContainer">
             <PhoneAndroidIcon className="icon"/>
-            <span>87-12-75-95-53</span>
+            <span>(+52) 87-12-75-95-53</span>
           </div>
           <div className="itemContainer">
             <EmailIcon className="icon"/>
@@ -32,7 +32,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
           </div>  
           <div className="itemContainer">
             <GitHubIcon className="icon"/>
-            <span><a href="https://github.com/thegera4?tab=repositories" target="_blank" rel="noreferrer">{t("Github_Profile")}</a></span>
+            <span><a href="https://github.com/thegera4" target="_blank" rel="noreferrer">{t("Github_Profile")}</a></span>
           </div>    
           <div className="itemContainer">
             <LinkedInIcon className="icon"/>

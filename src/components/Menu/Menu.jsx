@@ -1,7 +1,7 @@
 import './Menu.scss'
 import HomeIcon from '@mui/icons-material/Home';
 import ComputerIcon from '@mui/icons-material/Computer';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
+//import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { useTranslation } from "react-i18next";
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
@@ -22,14 +22,14 @@ function Menu({ menuOpen, setMenuOpen }) {
             <li onClick={() => setMenuOpen(false)}>
                 <a href="#portfolio"><ComputerIcon style={{marginRight: 10}}/>{t("Portfolio")}</a>
             </li>
-            <li onClick={() => setMenuOpen(false)}>
+           {/*} <li onClick={() => setMenuOpen(false)}>
                 <a href="#contact"><ContactMailIcon style={{marginRight: 10}}/>{t("Contact")}</a>
-            </li>
+            </li>*/}
             <li onClick={() => setMenuOpen(false)}>
                 <PhoneAndroidIcon style={{marginRight: 10}}/>(+52)87-12-75-95-53
             </li>
             <li onClick={() => setMenuOpen(false)}>
-                <a href="mailto:thegera4@hotmail.com"><EmailIcon style={{marginRight: 10}}/>thegera4@hotmail.com</a>
+                <a href="mailto:thegera4@hotmail.com"><EmailIcon style={{marginRight: 7}}/>thegera4@hotmail.com</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
                 <a href={CV} download><DownloadIcon style={{marginRight: 10}}/>{t("Download_CV")}</a>
