@@ -34,19 +34,20 @@
     }
     .container{
         width: 80%;
-        height: 85%;
+        height: 80%;
         display: flex;
         justify-content: center;
+        text-align: center;
         flex-wrap: wrap;
         @include mobile{
             width: 100%;
         }
-        .slider-wrapper {
+        
+        /*.slider-wrapper {
             position: relative;
             height: 100%;
             width: 100%;
             overflow: hidden;
-            
         }   
         .slide {
             background-size: cover !important;
@@ -129,7 +130,7 @@
             @include mobile5{
                 display: none;
             }
-        }
+        }*/
            
     }
 

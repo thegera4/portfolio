@@ -13,13 +13,13 @@ import JavaLogo from "../../assets/java-logo-1.png"
 import FireLogo from "../../assets/firebase-logo.png"
 import PostLogo from "../../assets/postgre.png"
 import SQLogo from "../../assets/SQLite_logo.png"
-import { useTranslation } from "react-i18next";
+//import { useTranslation } from "react-i18next";
 //import ParticleBackground from '../particleBackground';
 
 
 function Intro() {
 
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
 
   const variantsImg = {
     hidden: {
@@ -114,7 +114,7 @@ function Intro() {
             initial="hidden"
             animate="visible"
             variants={variantsH2}>
-            <h2>{t("Hi")}</h2>
+            <h2>Hi</h2>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -141,12 +141,12 @@ function Intro() {
             animate="visible"
             variants={variantsAboutMe}>
         <div className="bottomWrapper">
-          <h2>{t("About_Me")}</h2>
-          <p>{t("Intro_Description")}</p>
-          <p>{t("Intro_Description2")}</p>
-          <p>{t("Intro_Description3")}</p>
+          <h2>About_Me</h2>
+          <p>I'm a Mechatronics Engineer that is passionate about technology.</p>
+          <p>Currently, I'm looking for my first opportunity in the IT industry.</p>
+          <p>If you are interested in working with me, you can contact me via LinkedIn, Github or Email.</p>
           <br/>
-          <h3>{t("Intro_Description4")}</h3>
+          <h3>These are some of the tools that I have used:</h3>
           <div className="iconsWrapper">
             <div className="imgJS">
              <img src={JSLogo} alt="Javascript" />

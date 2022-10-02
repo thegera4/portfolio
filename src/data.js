@@ -102,6 +102,17 @@ export const webPortfolio = [
         descripcion: "Esta es la intefaz de usuario para una app de reservas para viajes que aún está en desarrollo. Usará las tecnologías MERN.",
         link: "https://booking-ui-ten.vercel.app/"
     },
+     {
+        id: 9,
+        title: "More Apps",
+        titulo: "Más aplicaciones",
+        img: More,
+        button: "Go to github",
+        boton: "Ir a github",
+        description: "I have developed several apps. You can see them in my github portfolio. Click the button to go to my github potfolio.",
+        descripcion: "He desarrollado varias aplicaciones. Puedes ver el código y descargarlo en mi portafolio de github. Haz click en el botón para ir a mi portafolio de github.",
+        link:"https://github.com/thegera4?tab=repositories"
+    },
  
 ]
 
