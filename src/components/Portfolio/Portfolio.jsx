@@ -15,6 +15,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { CardActions } from '@mui/material';
+import StripeIcon from '../../assets/icons/stripe.png'
 
 function Portfolio(props) {
   //const { t } = useTranslation();
@@ -102,6 +104,18 @@ function Portfolio(props) {
                 {slide.description}
               </Typography>
             </CardContent>
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                Technologies used:
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+            {
+              //check the array in slide.techStack and if it contains 'stripe' then show the stripe icon
+              slide?.techStack?.includes('Stripe') &&
+              <img src={StripeIcon} alt="stripe" style={{width: 50, height: 50}}/>
+            }
+            </CardActions>
         </Card>
         )}
       </div>

@@ -21,9 +21,10 @@ export const webPortfolio = [
         img: tuSpacio,
         button: "Go to Webpage",
         boton: "Ir a la página",
-        description: "This was my group project made during the Henry Bootcamp. This is a Fullstack App using PostgreSQL, Express, React, Redux and NodeJS. The deployment was made using Railway (Backend) and Vercel (Frontend). We also implemented other technologies such as: Stripe (for checkout), Auth0 (for authentication) as well as a Material UI. The admin has access to a complete dashboard for several actions related to the ecommerce.",
+        description: "This was my group project made during the Henry Bootcamp. This is an E-Commerce (Fullstack App) using PostgreSQL, Express, React, Redux and NodeJS. The deployment was made using Railway (Backend) and Vercel (Frontend). We also implemented other technologies such as: Stripe (for checkout), Auth0 (for authentication) as well as a Material UI. The admin has access to a complete dashboard for several actions related to the ecommerce.",
         descripcion: "Este fue mi proyecto grupal realizado durante el Bootcamp de Henry. Esta es un e-commerce Fullstack utilizando PostgreSQL, Express, React, Redux y NodeJS. El despliegue se realizó utilizando Railway (Backend) y Vercel (Frontend). También implementamos otras tecnologías como: Stripe (para el checkout), Auth0 (para la autenticación) así como Material UI. El administrador tiene acceso a un panel de control completo para varias acciones relacionadas con el ecommerce.",
-        link: "https://tuspacio.vercel.app/"
+        link: "https://tuspacio.vercel.app/",
+        techStack: ["Javascript", "React", "Redux", "NodeJS", "Express", "PostgreSQL", "Material UI", "Auth0", "Stripe"]
     },
     {
         id: 2,
