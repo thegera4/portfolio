@@ -1,3 +1,9 @@
+# Hi
+
+This is my personal portfolio project. It's a simple web site made with React where I show some of my projects for different technologies as well as my personal contact information.
+
+https://user-images.githubusercontent.com/84020433/193477048-d84e3d1d-191b-4a3c-aba1-aec143e26a7c.mp4
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
